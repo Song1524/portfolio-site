@@ -39,10 +39,32 @@ a {
   margin: 0 auto;
 }
 
+/* 이미지 block 처리를 공통 스타일로 적용 */
+img {
+  /* 이미지가 인라인 요소라서 발생하는 문자 기준선(Baseline) 아래의 공간을 제거하기 위해 */
+  display: block;
+}
+
+.title {
+  font-size: 50px;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 2px;
+  background-color: #333;
+  margin: 24px auto 0;
+}
+
 .animate-flash {
   animation-name: flash;
   animation-duration: 0.5s;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 2;
+  animation-timing-function: cubic-bezier(.43,.19,.02,1);
 }
 
 /* HEADER */
@@ -118,6 +140,57 @@ header nav ul li a:hover::after {
 .visual > .inner .purple {
   color: #9b30ff;
 }
+
+/* ABOUT */
+.about {
+  padding: 150px 0;
+}
+.about  .about__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.about  .about__wrapper .about__img {
+  width: 40%;
+}
+.about  .about__wrapper .about__img img {
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.1);
+}
+.about  .about__wrapper .about__text {
+  width: 40%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.about  .about__wrapper .about__text .slogan {
+  font-size: 35px;
+  font-weight: bold;
+}
+.about  .about__wrapper .about__text h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+.about  .about__wrapper .about__text h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+.about  .about__wrapper .about__text li {
+  line-height: 1.8;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* 애니메이션 정의는 맨 마지막에 */
