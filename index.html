@@ -1,14 +1,109 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  
+  <!-- 타이틀 변경 -->
+  <title>Goni | Full Stack Developer</title>
+
+  <!-- 파비콘 적용 -->
+  <!-- 파비콘(favicon.ico)은 프로젝트 폴더의 최상위(Root) 경로에 포함시키면 자동 적용
+    최상위 경로에 없거나, ico가 아닌 별도 파일을 가진 경우에는 <link>로 적용 -->
+  <link rel="icon" href="favicon.ico">
+  <!-- (참고) 파비콘 만들기: https://iconifier.net -->
+
+  <!-- reset.css 적용 -->
+  <!-- 스타일 초기화: 브라우저 별로 다른 기본스타일이 적용되는 것을 초기화 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
+
+  <!-- 구글 웹폰트 연결 -->
+  <!-- 구글 웹폰트: 경량화된 오픈 라이선스 폰트, 한글을 지원하는지 확인 및 필요한 굵기 선택 후 연결 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+  <!-- 구글 머티리얼 아이콘 연결 -->
+  <!-- 구글 머티리얼 아이콘: 구글에서 제공하는 머티리얼 스타일의 아이콘, 글자처럼 취급 가능한 장점 -->
+  <!-- 그 외 fontawesome, bootstrap icon 등 -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+  <!-- main.css -->
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- main.js -->
+  <script defer src="js/main.js"></script>
 </head>
-
 <body>
+  <!-- 폰트 테스트 -->
+  <!-- <span>헬로 월드!</span>
+  <span class="font-en">Hello world!</span> -->
 
+  <!-- HEADER -->
+  <header>
+    <div class="inner">
+      <!-- 로고 -->
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="로고">
+      </a>
+
+      <!-- 메뉴 -->
+      <nav class="font-en">
+        <ul>
+          <!-- 본인 메뉴 구조에 맞게 변경 -->
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#skill">SKILL</a></li>
+          <li><a href="#project">PROJECT</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- VISUAL -->
+  <!-- 첫 화면에 눈길을 끌 수 있는 자기를 소개하는 내용 담기 -->
+  <section class="visual">
+    <div class="inner">
+      <h1 class="font-en">
+        <span class="animate-flash" style="animation-delay: 0.04s;">반</span>
+          <span class="animate-flash" style="animation-delay: 0.26s;">짝</span>
+          <span class="animate-flash" style="animation-delay: 0.08s;">반</span>
+          <span class="animate-flash" style="animation-delay: 0.02s;">짝</span>
+          &nbsp;
+          <span class="animate-flash purple" style="animation-delay: 0.26s;">빛</span>
+          <span class="animate-flash purple" style="animation-delay: 0.06s;">나</span>
+          <span class="animate-flash purple" style="animation-delay: 0.14s;">는</span>
+          <br>
+          <span class="animate-flash" style="animation-delay: 0.06s;">F</span>
+          <span class="animate-flash" style="animation-delay: 0.28s;">u</span>
+          <span class="animate-flash" style="animation-delay: 0.12s;">l</span>
+          <span class="animate-flash" style="animation-delay: 0.15s;">l</span>
+          &nbsp;
+          <span class="animate-flash" style="animation-delay: 0.02s;">S</span>
+          <span class="animate-flash" style="animation-delay: 0.22s;">t</span>
+          <span class="animate-flash" style="animation-delay: 0.17s;">a</span>
+          <span class="animate-flash" style="animation-delay: 0.19s;">c</span>
+          <span class="animate-flash" style="animation-delay: 0.20s;">k</span>
+          &nbsp;
+          <span class="animate-flash purple" style="animation-delay: 0.11s;">D</span>
+          <span class="animate-flash purple" style="animation-delay: 0.18s;">e</span>
+          <span class="animate-flash purple" style="animation-delay: 0.05s;">v</span>
+          <span class="animate-flash purple" style="animation-delay: 0.06s;">e</span>
+          <span class="animate-flash purple" style="animation-delay: 0.09s;">l</span>
+          <span class="animate-flash purple" style="animation-delay: 0.24s;">o</span>
+          <span class="animate-flash purple" style="animation-delay: 0.28s;">p</span>
+          <span class="animate-flash purple" style="animation-delay: 0.14s;">e</span>
+          <span class="animate-flash purple" style="animation-delay: 0.25s;">r</span>
+          <br>
+          <span class="animate-flash purple" style="animation-delay: 0.10s;">송</span>
+          <span class="animate-flash purple" style="animation-delay: 0.16s;">진</span>
+          <span class="animate-flash purple" style="animation-delay: 0.24s;">영</span>
+          <span class="animate-flash" style="animation-delay: 0.12s;">입</span>
+          <span class="animate-flash" style="animation-delay: 0.15s;">니</span>
+          <span class="animate-flash" style="animation-delay: 0.05s;">다</span>
+          <span class="animate-flash" style="animation-delay: 0.13s;">.</span>
+      </h1>
+    </div>
+  </section>
 </body>
-
 </html>
