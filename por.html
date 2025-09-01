@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>portfolio - Song JY</title>
+
+  <!-- 리셋 & 폰트 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- 파비콘(원하면 교체) -->
+  <!-- <link rel="icon" type="image/png" href="favicon.png"> -->
+
+  <!-- 스타일 & 스크립트 -->
+  <link rel="stylesheet" href="./css/por.css">
+  <script defer src="./js/por.js"></script>
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header" aria-label="Site header">
+    <div class="container header-row">
+      <a class="brand" href="#top" aria-label="Go to top">
+        <span class="brand-badge">S</span>
+        <span>Song JY</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <ul>
+          <li><a href="#about" data-target="about">About</a></li>
+          <li><a href="#projects" data-target="projects">Projects</a></li>
+          <li><a href="#skill" data-target="skill">Skill</a></li>
+          <li><a class="cta" href="#contact" data-target="contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="progress"><i id="bar"></i></div>
+  </header>
+
+  <!-- MAIN -->
+  <main id="top">
+    <!-- Hero / Intro -->
+    <section class="hero section">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Software Engineer • Creative Dev</p>
+          <h1 class="headline">예술·디자인·소프트웨어의 교차점에서 유용한 것을 만듭니다.</h1>
+          <p class="lead">복잡한 문제를 단순하게 느껴지도록 만드는 인터랙션과 시스템을 좋아합니다.</p>
+          <div class="btns">
+            <a href="#projects" data-target="projects" class="btn">View Projects</a>
+            <a href="#contact" data-target="contact" class="btn primary">Contact</a>
+          </div>
+        </div>
+        <div class="letters" aria-hidden="true">
+          <div class="col" id="lettersCol"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section divider">
+      <div class="container about-grid">
+        <div>
+          <h2 class="h2">About me</h2>
+          <p class="para">
+            풀스택 웹 개발(Spring/JS), 크리에이티브 코딩(Canvas/WebGL), 알고리즘 최적화에 관심이 많습니다.
+            처음부터 끝까지 만들며, 결과물의 매끄러운 사용자 경험을 중요하게 생각합니다.
+          </p>
+          <div class="skills">
+            <div class="chip">Java / Spring Boot</div>
+            <div class="chip">JavaScript</div>
+            <div class="chip">MySQL / JPA</div>
+            <div class="chip">Solidity / Web3</div>
+            <div class="chip">HTML / CSS</div>
+            <div class="chip">UI/UX & Motion</div>
+          </div>
+        </div>
+        <div class="about-imgs">
+          <div class="square"><img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=1200&auto=format&fit=crop" alt=""></div>
+          <div class="square"><img src="https://images.unsplash.com/photo-1508704019882-f9cf40e475b4?q=80&w=1200&auto=format&fit=crop" alt=""></div>
+          <div class="square"><img src="https://images.unsplash.com/photo-1524041253872-14d8067d0961?q=80&w=1200&auto=format&fit=crop" alt=""></div>
+          <div class="square"><img src="https://images.unsplash.com/photo-1547936782-6d69ea49c84e?q=80&w=1200&auto=format&fit=crop" alt=""></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section divider">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="h2">Projects</h2>
+          <a href="#" class="seeall">See all →</a>
+        </div>
+        <div class="cards" id="projectGrid"></div>
+      </div>
+    </section>
+
+    <!-- Skill (원하면 상세 스킬표로 교체) -->
+    <section id="skill" class="section divider">
+      <div class="container">
+        <h2 class="h2">Skill</h2>
+        <p class="para">주요 도구: Java/Spring Boot, JS/HTML/CSS, MySQL/JPA, Git/GitHub, 기본적인 Figma</p>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section divider">
+      <div class="container contact-grid">
+        <div>
+          <h2 class="h2">Let’s work together</h2>
+          <p class="para">흥미로운 아이디어·역할·협업 제안 언제든 환영합니다.</p>
+          <div class="btns">
+            <a class="btn primary" href="mailto:you@example.com">you@example.com</a>
+            <a class="btn" href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="btn" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+        </div>
+        <form class="form" onsubmit="event.preventDefault()">
+          <label>이름<input class="input" placeholder="Your name"></label>
+          <label>이메일<input type="email" class="input" placeholder="you@example.com"></label>
+          <label>메시지<textarea class="textarea" placeholder="Tell me about your project"></textarea></label>
+          <button class="btn primary" style="width:100%">Send</button>
+          <p class="form-hint">(데모 폼 – 백엔드나 Formspree로 연결하세요)</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-row">
+      <div><b>2025 © Edition</b> • Asia/Seoul (KST)</div>
+      <div>Coded by <b>You</b></div>
+    </div>
+  </footer>
+</body>
+</html>
