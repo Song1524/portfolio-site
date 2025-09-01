@@ -28,6 +28,16 @@
   <!-- 그 외 fontawesome, bootstrap icon 등 -->
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 
+  <!-- Scrollmagic JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
   <!-- main.css -->
   <link rel="stylesheet" href="css/main.css">
 
@@ -54,7 +64,7 @@
           <li><a href="#about">ABOUT</a></li>
           <li><a href="#skill">SKILL</a></li>
           <li><a href="#project">PROJECT</a></li>
-          <li><a href="#contact">CONTACT</a></li>
+          <li><a href="#about">CONTACT</a></li>
         </ul>
       </nav>
     </div>
@@ -140,7 +150,174 @@
           </div>
         </div>
       </div>
+
+      <!-- CONTACT 버튼 -->
+      <div id="about" class="about__btn font-en">
+        <a href="#about">
+          <img src="./images/icon/icon_contact.png" alt="contact">CONTACT
+        </a>
+      </div>
     </div>
   </section>
+
+  <!-- SKILL -->
+  <section id="skill" class="skill scroll-spy">
+    <div class="inner">
+      <h2 class="title font-en">SKILL</h2>
+      <!-- 스킬 추가하려면 li 요소 복사 붙여넣기 -->
+      <ul class="skill__list">
+        <li>
+          <h3 class="font-en">Java</h3>
+          <h4 class="font-en">Java<br>Programing</h4>
+          <ul>
+            <li>객체지향</li>
+            <li>파일 입출력</li>
+            <li>JDBC</li>
+          </ul>
+        </li>
+        <li>
+          <h3 class="font-en">Html</h3>
+          <h4 class="font-en">HTML5</h4>
+          <ul>
+            <li>웹페이지 구조 설계</li>
+            <li>시맨틱 태그</li>
+          </ul>
+        </li>
+        <li>
+          <h3 class="font-en">Css</h3>
+          <h4 class="font-en">CSS3</h4>
+          <ul>
+            <li>웹페이지 레이아웃 설계</li>
+            <li>웹페이지 디자인</li>
+            <li>반응형 제작</li>
+          </ul>
+        </li>
+        <li>
+          <h3 class="font-en">Js</h3>
+          <h4 class="font-en">JavaScript</h4>
+          <ul>
+            <li>DOM 조작, 제어</li>
+            <li>이벤트 처리</li>
+            <li>비동기 통신</li>
+          </ul>
+        </li>
+        <li>
+          <h3 class="font-en">React</h3>
+          <h4 class="font-en">React JS</h4>
+          <ul>
+            <li>SPA 개발</li>
+            <li>전역 상태 관리</li>
+            <li>클라이언트 라우팅</li>
+            <li>CSR 방식 앱개발</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- PROJECT -->
+  <section id="project" class="project font-en">
+    <div class="inner">
+      <h2 class="title">PROJECT</h2>
+      <div class="port">
+        <div class="port__img">
+          <!-- 슬라이드 -->
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="images/work_1.jpg" alt="산출물1">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/work_2.jpg" alt="산출물2">
+              </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+        <div class="port__text">
+          <h3>프로젝트명</h3>
+          <ul>
+            <li><span>주요 기능 : </span>주요 기능 설명</li>
+            <li><span>적용 기술 : </span>HTML, CSS, JS, React, Java, Spring Boot</li>
+            <li><span>GitHub : </span>깃허브 주소</li>
+            <li><span>URL : </span>배포 주소</li>
+          </ul>
+          <div class="btn-group">
+            <a href="javascript:void(0)" class="btn btn-modal">README</a>
+            <a href="javascript:void(0)" class="btn btn--brown btn-modal-image" data-image-src="images/work_1.jpg">이미지</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="port">
+        <div class="port__img">
+          <!-- 슬라이드 -->
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="images/work_3.jpg" alt="산출물1">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/work_4.jpg" alt="산출물2">
+              </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+        <div class="port__text">
+          <h3>프로젝트명</h3>
+          <ul>
+            <li><span>주요 기능 : </span>주요 기능 설명</li>
+            <li><span>적용 기술 : </span>HTML, CSS, JS, React, Java, Spring Boot</li>
+            <li><span>GitHub : </span>깃허브 주소</li>
+            <li><span>URL : </span>배포 주소</li>
+          </ul>
+          <div class="btn-group">
+            <a href="javascript:void(0)" class="btn btn-modal">README</a>
+            <a href="javascript:void(0)" class="btn btn--brown btn-modal-image" data-image-src="images/work_3.jpg">이미지</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODAL -->
+  <!-- 모달 배경 -->
+  <div id="modal">
+    <!-- 모달 내용 -->
+    <div class="modal-content">
+      <div class="modal-header">
+        README
+        <span class="material-symbols-outlined btn-close">close</span>
+      </div>
+      <div class="modal-body">
+        <p>여기에 모달 내용이 들어갑니다.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- IMAGE MODAL -->
+  <!-- 모달 배경 -->
+  <div id="imageModal">
+    <!-- 모달 내용 -->
+    <div class="modal-content">
+      <div class="modal-header">
+        이미지
+        <span class="material-symbols-outlined btn-close">close</span>
+      </div>
+      <div class="modal-body">
+        <!-- 1픽셀 투명한 GIF -->
+        <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="이미지">
+      </div>
+    </div>
+  </div>
 </body>
 </html>
