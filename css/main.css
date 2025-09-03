@@ -549,6 +549,9 @@ footer .copyright {
     letter-spacing: 10px;
   }
 
+  .visual .inner {
+    font-size: 40px;
+  }
   .visual .inner .mobile-lf {
     display: inline !important;
   }
