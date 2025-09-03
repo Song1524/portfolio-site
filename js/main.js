@@ -90,7 +90,7 @@ document.addEventListener('keydown', function (e) {
 
 // 현재 연도 표시
 // 날짜 정보를 가진 JS의 Date 객체를 활용
-console.log(new Date().getFullYear());
+// console.log(new Date().getFullYear());
 const thisYear = document.querySelector('.this-year');
 thisYear.textContent = new Date().getFullYear();
 
@@ -127,3 +127,17 @@ window.addEventListener('scroll', function () {
   }
 });
 
+// 모바일용 메뉴
+const hamburgerBtn = document.querySelector('.btn-hamburger');
+const navEl = document.querySelector('header nav');
+const menuOp = document.querySelectorAll('header nav ul li a');
+
+hamburgerBtn.addEventListener('click', function () {
+  navEl.classList.toggle('active');
+});
+
+menuOp.forEach(function (menu) {
+  menu.addEventListener('click', function () {
+    navEl.classList.remove('active');
+  });
+});
